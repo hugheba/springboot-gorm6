@@ -29,6 +29,15 @@ dependencies {
     compile('org.springframework.boot:spring-boot-devtools')
     compile('net.bull.javamelody:javamelody-spring-boot-starter:1.68.1')
 	compile('org.codehaus.groovy:groovy-all')
+
+    // GORM
+    compile("org.grails:gorm-hibernate5-spring-boot:6.1.4.RELEASE")
+    compile "org.hibernate:hibernate-core:5.1.0.Final"
+    compile "org.hibernate:hibernate-ehcache:5.1.0.Final"
+
+    runtime "com.h2database:h2:1.4.192"
+    runtime "org.apache.commons:commons-dbcp2:2.0.1"
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
