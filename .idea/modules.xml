@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo_main.iml" group="demo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/demo_test.iml" group="demo" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-gorm6.iml" filepath="$PROJECT_DIR$/springboot-gorm6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-gorm6_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-gorm6_main.iml" group="springboot-gorm6" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot-gorm6_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot-gorm6_test.iml" group="springboot-gorm6" />
     </modules>
   </component>
 </project>
