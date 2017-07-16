@@ -11,7 +11,7 @@ spring:
       path: /console
 #  datasource:
 #    platform: h2
-  logging:
+logging:
     level:
       org.grails: DEBUG
 ---
@@ -26,7 +26,7 @@ dataSource:
 hibernate:
   cache:
     queries: false
-    use_second_level_cache: true
+    use_second_level_cache: false
     use_query_cached: false
     region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
 ---
