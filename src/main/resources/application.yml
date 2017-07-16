@@ -1,16 +1,36 @@
-hibernate:
-  hbm2ddl:
-    auto: update
-  dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+server:
+  port: 8085
+---
+# SPRING
 spring:
+  main:
+    bannerMode: console
   h2:
     console:
       enabled: true
       path: /console
-  datasource:
-    platform: h2
-  jpa:
-    generate-ddl: true
+#  datasource:
+#    platform: h2
+  logging:
+    level:
+      org.grails: DEBUG
+---
+# GORM
+dataSource:
+  pooled: true
+  dbCreate: create-drop
+  url: jdbc:h2:mem:testdb
+  driverClassName: org.h2.Driver
+  username: sa
+  password:
+hibernate:
+  cache:
+    queries: false
+    use_second_level_cache: true
+    use_query_cached: false
+    region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+---
+# JAVAMELODY
 javamelody:
   # Enable JavaMelody auto-configuration (optional, default: true)
   enabled: true
@@ -31,3 +51,4 @@ javamelody:
     #storage-directory: /tmp/javamelody
     # to change the default "/monitoring" path
     #monitoring-path: /admin/performance
+---

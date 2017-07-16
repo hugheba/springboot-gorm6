@@ -38,9 +38,7 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-<<<<<<< HEAD
-/out/
-=======
-/out/
-.idea/workspace.xml
->>>>>>> 731e5d234352fc493b7e221c5c2ac7f51480f6d2
+.idea/
+*.iml
+out/
+

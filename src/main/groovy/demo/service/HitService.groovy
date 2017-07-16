@@ -1,5 +1,5 @@
 package demo.service
 
 interface HitService {
-    void addHit(String referrer)
+    void addHit(String referer)
 }
